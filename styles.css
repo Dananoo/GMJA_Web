@@ -612,10 +612,12 @@ footer {
     }
 
     body {
-        background-attachment: scroll;
-        /* Fix mobile background jitter/zoom */
-        background-position: center top;
-        /* Focus on the top part of the image */
+        /* Re-declare background to force scroll and top alignment */
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/bg.png') no-repeat top center scroll !important;
+        background-size: cover !important;
+        height: 100vh;
+        /* Fallback */
+        min-height: 100vh;
     }
 
     h1 {
