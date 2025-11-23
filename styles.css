@@ -658,7 +658,8 @@ footer {
     }
 
     .hero-content {
-        order: 2;
+        order: 1;
+        /* Text first */
         margin: 2rem 0;
     }
 
@@ -668,8 +669,8 @@ footer {
     }
 
     .hero-side.right {
-        order: 1;
-        /* Ensure goddess is at the top or appropriate position */
+        order: 2;
+        /* Image second */
         margin-bottom: 2rem;
     }
 
