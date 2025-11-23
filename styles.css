@@ -155,35 +155,7 @@ header {
     }
 }
 
-/* Mobile Responsiveness for Hero */
-@media (max-width: 768px) {
-    .hero-container {
-        flex-direction: column;
-    }
-
-    .hero-side {
-        order: 1;
-        /* Images below text on mobile? Or maybe above? Let's put them around */
-    }
-
-    .hero-content {
-        order: 2;
-        margin: 2rem 0;
-    }
-
-    .hero-side.left {
-        order: 1;
-    }
-
-    .hero-side.right {
-        order: 3;
-    }
-
-    .hero-img {
-        width: 150px;
-        /* Smaller on mobile */
-    }
-}
+/* Mobile Responsiveness moved to end of file */
 
 /* Buttons */
 .btn {
@@ -681,8 +653,29 @@ footer {
         font-size: 1.1rem;
     }
 
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        order: 2;
+        margin: 2rem 0;
+    }
+
+    .hero-side.left {
+        display: none;
+        /* Hide symbol on mobile */
+    }
+
+    .hero-side.right {
+        order: 1;
+        /* Ensure goddess is at the top or appropriate position */
+        margin-bottom: 2rem;
+    }
+
     .hero-img {
-        width: 120px;
+        width: 200px;
+        /* Adjust size if needed for goddessM */
         margin: 1rem 0;
     }
 
